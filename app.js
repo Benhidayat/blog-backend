@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 8800;
 const { logger } = require('./middleware/logsHandler');
 const { notFoundError, errorHandler } = require('./middleware/errorHandler');
 
+
 /** CUSTOM LOGGER */
 app.use(logger);
 
