@@ -1,0 +1,12 @@
+### get all users
+GET http://localhost:8800/users
+
+### Register
+POST http://localhost:8800/auth/register
+Content-Type: application/json
+
+{
+    "username": "test",
+    "email": "test@email.com",
+    "password": "123test"
+}
