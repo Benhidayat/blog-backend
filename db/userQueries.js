@@ -34,9 +34,44 @@ const fetchUserByEmail = async (email) => {
     return user;
 };
 
+const updateUserRefreshToken = async (id, token) => {
+    const user = await prisma.user.update({
+        where: {
+            id
+        },
+        data: {
+            refreshToken: token
+        }
+    });
+    return user;
+};
+
+const fetchUserByRefreshToken = async (token) => {
+    const user = await prisma.user.findFirst({
+        where: {
+            refreshToken: token
+        }
+    });
+    return user;
+};
+
+const removeTokenFromUser = async (id) => {
+    const user = await prisma.user.update({
+        where: {
+            id
+        },
+        data: {
+            refreshToken: null
+        }
+    });
+};
+
 module.exports = {
     createUser,
     fetchUsers,
     fetchUserByUsername,
-    fetchUserByEmail
+    fetchUserByEmail,
+    updateUserRefreshToken,
+    fetchUserByRefreshToken,
+    removeTokenFromUser,
 };

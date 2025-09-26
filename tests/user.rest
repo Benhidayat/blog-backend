@@ -10,3 +10,15 @@ Content-Type: application/json
     "email": "test@email.com",
     "password": "123test"
 }
+
+### Login
+POST http://localhost:8800/auth/login
+Content-Type: application/json
+
+{
+    "username": "test",
+    "password": "123test"
+}
+
+### Logout
+GET http://localhost:8800/auth/logout

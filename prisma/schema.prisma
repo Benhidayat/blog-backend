@@ -17,13 +17,16 @@ model User {
   role         Role     @default(USER)
   createAt     DateTime @default(now())
   updateAt     DateTime @updatedAt
+  Post         Post[]
 }
 
 model Post {
   id      Int     @id @default(autoincrement())
   title   String  @db.VarChar(255)
-  content String
+  content String  @db.Text
   img     String? @db.VarChar(255)
+  author  User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId  Int
 }
 
 enum Role {

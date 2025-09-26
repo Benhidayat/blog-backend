@@ -160,3 +160,147 @@
     }
     return _v4(options, buf, offset);
 }	POST	undefined	/auth/register
+20250925	17:45:02	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	POST	undefined	/auth/login
+20250925	17:47:03	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	POST	undefined	/auth/login
+20250925	17:47:59	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	GET	undefined	/auth/logout
+20250925	17:48:34	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	GET	undefined	/auth/logout
+20250925	17:48:39	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	GET	undefined	/auth/logout
+20250925	17:48:39	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	GET	undefined	/auth/logout
+20250925	17:50:49	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	POST	undefined	/auth/login
+20250925	17:51:00	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	GET	undefined	/auth/logout
+20250925	17:51:23	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	GET	undefined	/users
+20250925	17:52:06	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	GET	undefined	/auth/logout
+20250925	17:52:13	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	POST	undefined	/auth/login
+20250925	17:52:22	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	GET	undefined	/auth/logout
+20250926	12:47:00	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	GET	undefined	/users
+20250926	12:47:17	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	GET	undefined	/users
+20250926	12:48:26	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	GET	undefined	/users
+20250926	12:50:01	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	GET	undefined	/users
+20250926	12:52:48	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	POST	undefined	/auth/login
+20250926	12:53:03	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	GET	undefined	/users
+20250926	12:53:18	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	GET	undefined	/auth/logout
+20250926	12:58:14	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	GET	undefined	/users
+20250926	13:00:23	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	GET	undefined	/users
+20250926	13:00:31	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	POST	undefined	/auth/login
+20250926	13:01:14	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	GET	undefined	/users
+20250926	13:01:39	function v4(options, buf, offset) {
+    if (native.randomUUID && !buf && !options) {
+        return native.randomUUID();
+    }
+    return _v4(options, buf, offset);
+}	GET	undefined	/users
