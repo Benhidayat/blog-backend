@@ -1,0 +1,9 @@
+### write a comment
+POST http://localhost:8800/api/v1/comments/write
+Content-Type: application/json
+
+{
+    "comment": "second test comment",
+    "userId": 1,
+    "postId": 5
+}

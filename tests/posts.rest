@@ -1,0 +1,23 @@
+### fetch all posts
+GET http://localhost:8800/api/v1/posts
+
+### fetch single post
+GET http://localhost:8800/api/v1/posts/5
+
+### create post
+POST  http://localhost:8800/api/v1/posts/write
+Content-Type: application/json
+
+{
+    "title": "test post",
+    "content": "This post is a test post for mockup",
+    "img": "https://images.pexels.com/photos/4230630/pexels-photo-4230630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "cat": "art",
+    "userId": 3
+}
+
+### delete post
+DELETE  http://localhost:8800/api/v1/posts/1
+
+### upload test
+POST   http://localhost:8800/api/v1/upload

@@ -1,11 +1,12 @@
 const prisma = require('./prismaClient');
 
-const createUser = async (username, email, password) => {
+const createUser = async (username, email, password, role) => {
     const user = await prisma.user.create({
         data: {
             username,
             email,
-            password
+            password,
+            role: role || 'USER' 
         }
     });
     return user;
@@ -66,6 +67,13 @@ const removeTokenFromUser = async (id) => {
     });
 };
 
+const deleteUser = async (id) => {
+    const deletedUser = await prisma.user.delete({
+        where: { id },
+    });
+    return deleteUser;
+};
+
 module.exports = {
     createUser,
     fetchUsers,
@@ -74,4 +82,5 @@ module.exports = {
     updateUserRefreshToken,
     fetchUserByRefreshToken,
     removeTokenFromUser,
+    deleteUser,
 };

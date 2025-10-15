@@ -10,7 +10,8 @@ const { notFoundError, errorHandler } = require('./middleware/errorHandler');
 const usersRouter = require('./routes/users');
 const authRouters = require('./routes/auth');
 const postRouters = require('./routes/posts');
-const verifyJWt = require('./middleware/verifyJWT');
+const commentRouter = require(  './routes/comments');
+const uploadRouter = require('./routes/upload');
 
 /** CUSTOM LOGGER */
 app.use(logger);
@@ -33,8 +34,10 @@ app.get('/', (req, res) =>{
     res.status(200).send('<h1>Hello World</h1>')
 });
 app.use('/api/v1/auth', authRouters);
-app.use('/api/v1/users', usersRouter);
 app.use('/api/v1/posts', postRouters);
+app.use('/api/v1/users', usersRouter);
+app.use('/api/v1/upload', uploadRouter);
+app.use('/api/v1/comments', commentRouter);
 
 /** ERROR HANDLER MIDDLEWARE */
 app.all('/{*any}', notFoundError);

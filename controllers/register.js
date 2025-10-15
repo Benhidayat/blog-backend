@@ -8,7 +8,7 @@ const {
 } = require('../db/userQueries');
 
 const register = asyncHandler(async (req, res, next) => {
-    const { username, email, password } = req.body;
+    const { username, email, password, role } = req.body;
     if (!username || !email || !password) throw new CustomError('Username, email & password are required', 400);
 
     const duplicatedUser = await fetchUserByUsername(username);
@@ -22,7 +22,7 @@ const register = asyncHandler(async (req, res, next) => {
     const hashedPwd = bcrypt.hashSync(password, salt);
     
     // create user in db
-    const user = await createUser(username, email, hashedPwd);
+    const user = await createUser(username, email, hashedPwd, role);
 
     const { password: pwd, ...otherInfo} = user
 
